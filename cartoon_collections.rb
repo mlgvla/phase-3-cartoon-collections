@@ -1,5 +1,5 @@
 def roll_call_dwarves(dwarves)
-  dwarves.to_enum.with_index(1){ |dwarf, idx| puts "#{idx}. #{dwarf}" }
+  dwarves.each.with_index(1){ |dwarf, idx| puts "#{idx}. #{dwarf}" }
 end
 
 def summon_captain_planet(calls)
